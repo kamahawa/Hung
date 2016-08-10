@@ -7,3 +7,13 @@ F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample
 F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.csproj.GenerateResource.Cache
 F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.exe
 F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.pdb
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\bin\Debug\SEOGooglePlusSample.exe.config
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.exe
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.pdb
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\bin\Debug\SEOGooglePlusSample.exe
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\bin\Debug\SEOGooglePlusSample.pdb
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.csprojResolveAssemblyReference.cache
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.MainForm.resources
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.Properties.Resources.resources
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.csproj.GenerateResource.Cache
+F:\Project\SEOHung\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.FormProgress.resources

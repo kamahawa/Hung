@@ -1,6 +1,6 @@
 ﻿namespace SEOGooglePlusSample
 {
-    partial class Form1
+    partial class FormProgress
     {
         /// <summary>
         /// Required designer variable.
@@ -39,18 +39,19 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(819, 526);
             this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("https://plus.google.com", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
-            // Form1
+            // FormProgress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 526);
             this.Controls.Add(this.webBrowser1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormProgress";
+            this.Text = "Progress";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormProgress_FormClosed);
             this.ResumeLayout(false);
 
         }
