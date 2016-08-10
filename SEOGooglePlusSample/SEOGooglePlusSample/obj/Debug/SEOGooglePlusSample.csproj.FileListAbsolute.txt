@@ -1,0 +1,9 @@
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\bin\Debug\SEOGooglePlusSample.exe.config
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\bin\Debug\SEOGooglePlusSample.exe
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\bin\Debug\SEOGooglePlusSample.pdb
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.csprojResolveAssemblyReference.cache
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.Form1.resources
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.Properties.Resources.resources
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.csproj.GenerateResource.Cache
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.exe
+F:\Project\SEOGooglePlusSample\SEOGooglePlusSample\obj\Debug\SEOGooglePlusSample.pdb
