@@ -29,7 +29,7 @@ namespace SEOGooglePlusSample
         string search = "sach hay";
 
         // so luong thanh vien cua cong dong
-        int numberUser = 50000;
+        int numberMember = 50000;
 
         // list id cong dong
         List<string> lstCommunities = new List<string>();
@@ -114,7 +114,7 @@ namespace SEOGooglePlusSample
                     {
                         goToJoin();
                     }
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
                 }                
             }
         }
@@ -197,13 +197,44 @@ namespace SEOGooglePlusSample
                 new MethodInvoker(
                     delegate
                     {
-                        var links = webBrowser1.Document.GetElementsByTagName("a");
+                        var contents = webBrowser1.Document.GetElementById("contentPane");
+
+                        if(contents == null)
+                        {
+                            countRun = GO_TO_SEARCH;
+                            //bat co chay lai khi loi
+                            flagComplete = true;
+                            return;
+                        }
+
+                        var links = contents.GetElementsByTagName("a");
+
                         foreach (HtmlElement link in links)
                         {
+                            //lay id cong dong
                             if (link.GetAttribute("className") == "d-s ob b7a n9c Dgc s7c hWd")
                             {
-                                MessageBox.Show("here");
-                                lstCommunities.Add(link.GetAttribute("data-comm"));
+                                //lay so luong member
+                                var members = link.GetElementsByTagName("span");
+                                foreach (HtmlElement member in members)
+                                {
+                                    if (member.GetAttribute("className") == "E1d")
+                                    {
+                                        string[] countMembers = member.InnerText.Split(' ')[0].Split('.');
+                                        string countMember = "";
+                                        foreach(string c in countMembers)
+                                        {
+                                            countMember += c;
+                                        }
+
+                                        if(Int32.Parse(countMember) > numberMember)
+                                        {
+                                            lstCommunities.Add(link.GetAttribute("data-comm"));
+                                            writeTextToFile(link.GetAttribute("data-comm"));
+                                        }
+
+                                    }
+                                }                                
                             }
                         }
                     }
@@ -212,6 +243,19 @@ namespace SEOGooglePlusSample
 
             //System.IO.File.WriteAllText("WriteText.txt", webBrowser1.Document.Body.ToString());
             countRun = GO_TO_REST;
+        }
+
+        void writeTextToFile(string content)
+        {
+            string fileName = "WriteText.txt";
+            if(!File.Exists(fileName))
+            {
+                File.CreateText(fileName);
+            }
+            using (StreamWriter sw = File.AppendText(fileName))
+            {
+                sw.WriteLine(content);
+            }	
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
