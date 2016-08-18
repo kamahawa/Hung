@@ -238,18 +238,14 @@ namespace SEOGooglePlusSample
                                     {
                                         span.InvokeMember("click");
 
-                                        /*
-                                        HtmlElement head = webBrowser1.Document.GetElementsByTagName("head")[0];
-                                        HtmlElement scriptEl = webBrowser1.Document.CreateElement("script");
-                                        IHTMLScriptElement element = (IHTMLScriptElement)scriptEl.DomElement;
-                                        element.text = "function sayHello() { alert('hello') }";
-                                        head.AppendChild(scriptEl);
-                                        webBrowser1.Document.InvokeScript("sayHello");
-                                         * */
                                         HtmlDocument doc = webBrowser1.Document;
                                         HtmlElement head = doc.GetElementsByTagName("head")[0];
                                         HtmlElement s = doc.CreateElement("script");
-                                        s.SetAttribute("text", "function performClick() { alert('hello'); }");
+                                        s.SetAttribute("text", @"function performClick() 
+                                                                { 
+                                                                     alert('hello'); 
+                                                                     document.getElementsByClassName('d-k-l b-c b-c-Wa b-c-da-ja cQc FSb').click()       
+                                                                }");
                                         head.AppendChild(s);
                                         webBrowser1.Document.InvokeScript("performClick");
 
