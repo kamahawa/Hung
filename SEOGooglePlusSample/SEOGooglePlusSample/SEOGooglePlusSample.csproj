@@ -52,6 +52,12 @@
     <Compile Include="FormProgress.Designer.cs">
       <DependentUpon>FormProgress.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSEO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSEO.Designer.cs">
+      <DependentUpon>FormSEO.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormProgress.resx">
       <DependentUpon>FormProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSEO.resx">
+      <DependentUpon>FormSEO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

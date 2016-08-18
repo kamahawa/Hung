@@ -21,9 +21,9 @@ namespace SEOGooglePlusSample
 
         private void _btnStart_Click(object sender, EventArgs e)
         {
-            FormProgress f = new FormProgress();
-            f.Show();
             this.Hide();
+            FormSEO f = new FormSEO();
+            f.Show();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -59,6 +59,21 @@ namespace SEOGooglePlusSample
             string path = "account.xml";
             DataSet ds = (DataSet)dtgAccount.DataSource;
             ds.WriteXml(path);
+        }
+
+        private void btnGetIdCommunities_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            int member = 0;
+            try
+            {
+                member = Int32.Parse(txtMember.Text);
+            }
+            catch(Exception ex)
+            { }
+            FormProgress f = new FormProgress(txtSearch.Text, member);
+            f.ShowDialog();
+            this.Show();
         }
     }
 }
